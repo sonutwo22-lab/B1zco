@@ -1,0 +1,6 @@
+{
+  "name": "Bizco Agency | Ultra High-End Creative Agency",
+  "description": "Production-ready Vite + React + TypeScript web application for Bizco Agency featuring Home, Services, Portfolio Archives, and Contact pages with cinematic typography and interactive animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
