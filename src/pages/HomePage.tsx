@@ -122,11 +122,13 @@ const Preloader: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   );
 };
 
-const VideoBackground: React.FC<{
-  onComplete: () => void;
-  isFinished: boolean;
-}> = ({ onComplete, isFinished }) => {
+const HeroSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isFinished, setIsFinished] = useState(false);
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
+  const scale = useTransform(scrollY, [0, 800], [1, 0.95]);
+  const scrollBlur = useTransform(scrollY, [0, 600], [0, 10]);
 
   useEffect(() => {
     let isMounted = true;
@@ -136,47 +138,56 @@ const VideoBackground: React.FC<{
       videoRef.current.play().catch((e) => console.warn('Autoplay caught:', e));
     }
     const timer = setTimeout(() => {
-      if (isMounted) onComplete();
+      if (isMounted) setIsFinished(true);
     }, 12000);
     return () => {
       isMounted = false;
       clearTimeout(timer);
     };
-  }, [onComplete]);
-
-  return (
-    <motion.div
-      className="fixed inset-0 z-0 pointer-events-none bg-[#050B14] hidden md:flex items-center justify-center overflow-hidden w-full h-full max-h-[100vh]"
-      animate={{
-        filter: isFinished ? 'blur(20px)' : 'blur(0px)',
-        opacity: isFinished ? 0.35 : 0.8,
-      }}
-      transition={{ duration: 2, ease: EASE }}
-    >
-      <video
-        ref={videoRef}
-        className="w-full h-full max-h-[100vh] object-contain object-center pointer-events-none opacity-80"
-        autoPlay
-        muted
-        playsInline
-        onEnded={onComplete}
-        src="https://bizco.in/wp-content/uploads/2026/05/IMG_9498.webm"
-      />
-    </motion.div>
-  );
-};
-
-const HeroSection: React.FC = () => {
-  const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
-  const scale = useTransform(scrollY, [0, 800], [1, 0.95]);
-  const scrollBlur = useTransform(scrollY, [0, 600], [0, 10]);
+  }, []);
 
   return (
     <motion.section
-      style={{ opacity, scale }}
-      className="relative h-screen flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12 overflow-hidden z-10"
+      style={{
+        opacity,
+        scale,
+        position: 'relative',
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden',
+      }}
+      className="relative w-screen h-screen overflow-hidden flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12 z-10"
     >
+      {/* Background Video - Edge-to-Edge 100% full screen cover */}
+      <motion.div
+        className="absolute inset-0 w-full h-full pointer-events-none z-0 hidden md:block overflow-hidden"
+        animate={{
+          filter: isFinished ? 'blur(20px)' : 'blur(0px)',
+          opacity: isFinished ? 0.35 : 0.8,
+        }}
+        transition={{ duration: 2, ease: EASE }}
+      >
+        <video
+          ref={videoRef}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center',
+          }}
+          className="absolute top-0 left-0 w-full h-full object-cover object-center pointer-events-none"
+          autoPlay
+          muted
+          playsInline
+          onEnded={() => setIsFinished(true)}
+          src="https://bizco.in/wp-content/uploads/2026/05/IMG_9498.webm"
+        />
+      </motion.div>
+
+      {/* Hero Typography & Content */}
       <div className="relative z-10 w-full flex flex-col md:flex-row justify-between items-end gap-12">
         <motion.div
           className="max-w-5xl"
@@ -639,18 +650,12 @@ const HomeFooter: React.FC = () => {
 
 export const HomePage: React.FC = () => {
   const [loading, setLoading] = useState(false);
-  const [isVideoFinished, setIsVideoFinished] = useState(false);
 
   return (
     <div className="relative z-10">
       <AnimatePresence>
         {loading && <Preloader onComplete={() => setLoading(false)} />}
       </AnimatePresence>
-
-      <VideoBackground
-        isFinished={isVideoFinished}
-        onComplete={() => setIsVideoFinished(true)}
-      />
 
       <HeroSection />
       <ManifestoSection />
