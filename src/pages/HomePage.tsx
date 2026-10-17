@@ -10,48 +10,48 @@ import { Play, X } from 'lucide-react';
 import { CinematicTextReveal } from '../components/CinematicTextReveal';
 
 const ASSETS = {
-  logoMain: 'https://bizco.in/wp-content/uploads/2026/05/Bizco-scaled.webp',
-  stairs: 'https://bizco.in/wp-content/uploads/2026/04/blue_stairs.webp',
-  grid: 'https://bizco.in/wp-content/uploads/2026/04/blue_Grid.webp',
-  flow1: 'https://bizco.in/wp-content/uploads/2026/04/Blue_flow1.webp',
-  flow2: 'https://bizco.in/wp-content/uploads/2026/04/Blue_flow2.webp',
+  logoMain: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Bizco-scaled.webp',
+  stairs: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/04/blue_stairs.webp',
+  grid: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/04/blue_Grid.webp',
+  flow1: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/04/Blue_flow1.webp',
+  flow2: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/04/Blue_flow2.webp',
   case1:
     'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600',
   case2:
     'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1600',
   case3:
-    'https://bizco.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-05-25-at-00.57.20.jpeg',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-05-25-at-00.57.20.jpeg',
 };
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const BRANDS = [
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/gehna-logo-1024.webp',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/gehna-logo-1024.webp',
     invert: true,
   },
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/hamstech-logo.webp',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/hamstech-logo.webp',
     invert: false,
   },
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/logo-mtv-1.webp',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/logo-mtv-1.webp',
     invert: true,
   },
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/logo-02.webp',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/logo-02.webp',
     invert: false,
   },
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/images-Photoroom.webp',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/images-Photoroom.webp',
     invert: true,
   },
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/b-blunt_owler_20170706_201317_original-Photoroom.webp',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/b-blunt_owler_20170706_201317_original-Photoroom.webp',
     invert: true,
   },
   {
-    src: 'https://bizco.in/wp-content/uploads/2026/06/Scalora-logo-Photoroom.png',
+    src: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/Scalora-logo-Photoroom.png',
     invert: false,
   },
 ];
@@ -183,7 +183,7 @@ const HeroSection: React.FC = () => {
           muted
           playsInline
           onEnded={() => setIsFinished(true)}
-          src="https://bizco.in/wp-content/uploads/2026/05/IMG_9498.webm"
+          src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/IMG_9498.webm"
         />
       </motion.div>
 
@@ -396,19 +396,19 @@ const StickyServices: React.FC = () => {
     {
       title: 'Branding & Identity',
       sub: 'Cognitive Anchoring',
-      img: 'https://bizco.in/wp-content/uploads/2026/05/ChatGPT-10.webp',
+      img: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-10.webp',
       desc: 'We design highly memorable visual and verbal identity setups from logos that carry deep meaning to comprehensive collateral assets that reliably build brand affinity.',
     },
     {
       title: 'Marketing & Strategy',
       sub: 'Market Positioning',
-      img: 'https://bizco.in/wp-content/uploads/2026/05/ChatGPT-8.webp',
+      img: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-8.webp',
       desc: 'Formulating calculated high-performance marketing models and intentional campaign frameworks that provide unambiguous direction to maximize real conversion paths.',
     },
     {
       title: 'Growth & Visibility',
       sub: 'Performance Mechanics',
-      img: 'https://bizco.in/wp-content/uploads/2026/05/ChatGPT-7.webp',
+      img: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-7.webp',
       desc: 'Architecting predictable acquisition structures, stopping social ecosystems, and engineering unified corporate deployment spaces built to move project parameters reliably.',
     },
   ];
@@ -516,13 +516,13 @@ const WorkSection: React.FC = () => {
         </div>
 
         <img
-          src="https://bizco.in/wp-content/uploads/2026/05/Market.webp"
+          src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Market.webp"
           alt="Market Desktop"
           className="w-full max-w-5xl rounded-2xl shadow-2xl hidden lg:block"
         />
 
         <img
-          src="https://bizco.in/wp-content/uploads/2026/06/11.webp"
+          src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/06/11.webp"
           alt="Market Mobile"
           className="w-full max-w-5xl rounded-2xl shadow-2xl block lg:hidden"
         />
@@ -608,7 +608,7 @@ const HomeFooter: React.FC = () => {
               >
                 <video
                   ref={videoRef}
-                  src="https://bizco.in/wp-content/uploads/2026/05/IMG_9498.webm"
+                  src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/IMG_9498.webm"
                   className="w-full h-full object-cover"
                   autoPlay
                   playsInline

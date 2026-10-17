@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMenu }) => {
         <MagneticElement strength={0.2}>
           <Link to="/" aria-label="Bizco Agency Home">
             <img
-              src="https://bizco.in/wp-content/uploads/2026/05/Bizco-scaled.webp"
+              src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Bizco-scaled.webp"
               alt="Bizco Logo"
               className="h-6 md:h-8 w-auto brightness-0 invert"
             />

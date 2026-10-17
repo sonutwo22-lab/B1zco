@@ -13,36 +13,36 @@ import { PortfolioItem } from '../types';
 
 const ASSETS = {
   brave_logo:
-    'https://bizco.in/wp-content/uploads/2026/05/24baee79d1b281fb6409a7fa9ec25d86dc86dea01b266ae90625a6c9323967fa.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/24baee79d1b281fb6409a7fa9ec25d86dc86dea01b266ae90625a6c9323967fa.webp',
   brave_poster_1:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot.webp',
   brave_poster_2:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-1.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-1.webp',
 
   uki_logo:
-    'https://bizco.in/wp-content/uploads/2026/05/images.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/images.webp',
   uki_food:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-2.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-2.webp',
   uki_drink:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-3.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-3.webp',
 
   gehna_logo:
-    'https://bizco.in/wp-content/uploads/2026/05/ef4f5425903423.55474fd31596a.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/ef4f5425903423.55474fd31596a.webp',
   gehna_bridal:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-6.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-6.webp',
 
   label_logo:
-    'https://bizco.in/wp-content/uploads/2026/05/images-1.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/images-1.webp',
   label_poster:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-7.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-7.webp',
 
   livlife_logo:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-8.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-8.webp',
   livlife_ad:
-    'https://bizco.in/wp-content/uploads/2026/05/Screenshot-9.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Screenshot-9.webp',
 
   hamstech_logo:
-    'https://bizco.in/wp-content/uploads/2026/05/unnamed.webp',
+    'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/unnamed.webp',
 };
 
 const EASE = [0.16, 1, 0.3, 1] as const;

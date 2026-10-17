@@ -20,21 +20,21 @@ const SERVICES_DATA: ServiceItem[] = [
     title: 'Marketing',
     description:
       "Strategy. Campaigns. Growth direction. We don't just run ads; we engineer market-dominating narratives that position your brand ahead of the curve.",
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/1.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/1.webp',
   },
   {
     id: '02',
     title: 'Social Media',
     description:
       'Content that stops, engages, and builds influence. We transform passive scrollers into active community members through highly intentional visual and textual assets.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/3.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/3.webp',
   },
   {
     id: '03',
     title: 'Branding',
     description:
       'Identities that people remember and trust. Before we design a logo, we define the cognitive moat. We build brands that justify premium positioning.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/4.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/4.webp',
   },
   {
     id: '04',
@@ -42,7 +42,7 @@ const SERVICES_DATA: ServiceItem[] = [
     subtitle: '(Sales Systems)',
     description:
       'Predictable acquisition engines and structured sales methodologies engineered to scale your narrative and convert attention into revenue.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/2.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/2.webp',
   },
   {
     id: '05',
@@ -50,21 +50,21 @@ const SERVICES_DATA: ServiceItem[] = [
     subtitle: 'Company Registration +',
     description:
       'Seamless administrative and legal structuring. We lay the foundational architecture so you can focus entirely on scaling operations.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/5.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/5.webp',
   },
   {
     id: '06',
     title: 'Events',
     description:
       'Experiences that create real brand impact. From conceptualization to execution, we craft physical spaces and moments that leave lasting psychological imprints.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/6.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/6.webp',
   },
   {
     id: '07',
     title: 'Web Development',
     description:
       'Websites built to convert, not just look good. We merge high-end aesthetic logic with ruthless performance mechanics.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/7.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/7.webp',
   },
   {
     id: '08',
@@ -72,7 +72,7 @@ const SERVICES_DATA: ServiceItem[] = [
     subtitle: '(with Scalora)',
     description:
       'Track. Manage. Close. Scale. Advanced customer relationship management systems integrated smoothly into your daily operational flow.',
-    placeholderImg: 'https://bizco.in/wp-content/uploads/2026/05/8.webp',
+    placeholderImg: 'https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/8.webp',
   },
 ];
 
@@ -146,7 +146,7 @@ const ServicesHero: React.FC = () => {
       <div className="absolute top-[80%] md:top-[90%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160vw] md:w-[65vw] h-[65vh] md:h-[85vh] z-20 pointer-events-none flex items-start justify-center">
         <motion.div style={{ y: yImg, scale: scaleImg }} className="w-full h-full">
           <img
-            src="https://bizco.in/wp-content/uploads/2026/05/wmyb.webp"
+            src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/wmyb.webp"
             alt="What We Do"
             className="w-full h-full object-cover object-top drop-shadow-2xl"
           />
@@ -204,7 +204,7 @@ const MethodologyBreak: React.FC = () => {
         >
           <motion.img
             style={{ y: yImg, scale: 1.1 }}
-            src="https://bizco.in/wp-content/uploads/2026/05/Gemini_Generated_Image_tro617tro617tro6.webp"
+            src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/Gemini_Generated_Image_tro617tro617tro6.webp"
             alt="What We Bring"
             className="w-full h-full object-contain"
           />
