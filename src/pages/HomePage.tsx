@@ -132,17 +132,33 @@ const HeroSection: React.FC = () => {
 
   useEffect(() => {
     let isMounted = true;
-    if (videoRef.current) {
-      videoRef.current.defaultMuted = true;
-      videoRef.current.muted = true;
-      videoRef.current.play().catch((e) => console.warn('Autoplay caught:', e));
+    const video = videoRef.current;
+    if (video) {
+      video.defaultMuted = true;
+      video.muted = true;
+      video.setAttribute('playsinline', 'true');
+      video.setAttribute('webkit-playsinline', 'true');
+      const promise = video.play();
+      if (promise !== undefined) {
+        promise.catch((e) => console.warn('Autoplay caught:', e));
+      }
     }
+
+    const handleFirstTouch = () => {
+      if (video && video.paused) {
+        video.play().catch(() => {});
+      }
+    };
+    window.addEventListener('touchstart', handleFirstTouch, { passive: true, once: true });
+
     const timer = setTimeout(() => {
       if (isMounted) setIsFinished(true);
     }, 12000);
+
     return () => {
       isMounted = false;
       clearTimeout(timer);
+      window.removeEventListener('touchstart', handleFirstTouch);
     };
   }, []);
 
@@ -158,9 +174,9 @@ const HeroSection: React.FC = () => {
       }}
       className="relative w-screen h-screen overflow-hidden flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12 z-10"
     >
-      {/* Background Video - Edge-to-Edge 100% full screen cover */}
+      {/* Background Video - Edge-to-Edge 100% full screen cover on mobile and desktop */}
       <motion.div
-        className="absolute inset-0 w-full h-full pointer-events-none z-0 hidden md:block overflow-hidden"
+        className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-hidden"
         animate={{
           filter: isFinished ? 'blur(20px)' : 'blur(0px)',
           opacity: isFinished ? 0.35 : 0.8,
@@ -182,6 +198,8 @@ const HeroSection: React.FC = () => {
           autoPlay
           muted
           playsInline
+          loop
+          preload="auto"
           onEnded={() => setIsFinished(true)}
           src="https://darksalmon-cat-492810.hostingersite.com/wp-content/uploads/2026/05/IMG_9498.webm"
         />
